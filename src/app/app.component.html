@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <ng2-dual-list-box [data]="items" valueField="id" textField="name"
+    				   [(ngModel)]="selected"
                        (onAvailableItemSelected)="log($event)"
                        (onSelectedItemsSelected)="log($event)"
                        (onItemsMoved)="log($event)"></ng2-dual-list-box>

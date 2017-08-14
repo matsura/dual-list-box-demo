@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 import { DualListBoxModule } from 'ng2-dual-list-box';
 
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     DualListBoxModule.forRoot()
   ],
   providers: [],

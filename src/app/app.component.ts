@@ -8,15 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   items = [];
+  selected = [];
 
   constructor() {
 
-    for (let i = 1; i < 100; i++) {
-      this.items.push({
-        id: i.toString(),
-        name: 'Name ' + i
-      });
-    }
+    this.items = [ { id: "1", name: "Antonito" }, { id: "2", name: "Bonito" } ];
+    this.selected = ["1", "2"];
   }
 
   log(data) {
